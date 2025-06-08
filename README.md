@@ -1,5 +1,13 @@
 # BibleGateway-to-Obsidian
 
+
+## Install Submodule
+
+``` bash
+git submodule update --init --recursive
+```
+
+
 ## ⚠️ Disclaimers
 
 By default, the version is set to the [WEB Bible](https://worldenglish.bible/). You can change the version but **must honour the copyright standards** of different translations of the Bible (See for example [BibleGateway's overview](https://www.biblegateway.com/versions/)).

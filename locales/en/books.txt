@@ -14,15 +14,22 @@ Ruth
 2 Chronicles
 Ezra
 Nehemiah
+Tobit
+Judith
 Esther
+1 Maccabees
+2 Maccabees
 Job
 Psalms
 Proverbs
 Ecclesiastes
 Song of Solomon
+Wisdom (of Solomon)
+Sirach (Ecclesiasticus)
 Isaiah
 Jeremiah
 Lamentations
+Baruch
 Ezekiel
 Daniel
 Hosea

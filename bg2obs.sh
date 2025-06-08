@@ -111,13 +111,24 @@ done <"$translation_folder/$ABBR_FILE"
 
 # Book chapter list
 declare -a chapter_array
-chapter_array=(50 40 27 36 34 24 21 4 31 24 22 25 29 36 10 13 10 42 150 31 12 8 66 52 5 48 12 14 3 9 1 4 7 3 3 3 2 14 4 28 16 24 21 28 16 16 13 6 6 4 4 5 3 6 4 3 1 13 5 5 3 5 1 1 1 22)
+chapter_array=(
+  50 40 27 36 34 24 21 4     # Genesis–Ruth
+  31 24 22 25 29 36 10 13    # 1 Samuel–Nehemiah
+  14 16 10 16 15             # Tobit, Judith, Esther, 1 Macc, 2 Macc
+  42 150 31 12 8             # Job–Song of Solomon
+  19 51                      # Wisdom, Sirach
+  66 52 5 6 48 14            # Isaiah–Daniel
+  14 3 9 1 4 7 3 3 3 2 14 4  # Hosea–Malachi
+  28 16 24 21 28 16 16 13    # Matthew – 2 Corinthians
+  6 6 4 4 5 3 6 4 3 1 13     # Galatians – Hebrews
+  5 5 3 5 1 1 1 22           # James – Revelation
+)
 
 # Find the longest book title (this might change in different languages)
 # this will be used for verbose progress bar display
 title_max=0
 if [[ $ARG_VERBOSE == "true" ]]; then
-  for ((i=0; i<66; i++)); do
+  for ((i=0; i<73; i++)); do
     if [[ ${#book_array[i]} -gt $title_max ]]; then
       title_max=${#book_array[i]}
     fi
@@ -180,7 +191,7 @@ if [[ $ARG_VERBOSE == "true" ]]; then
 fi
 
 # Loop through the books of the Bible
-for ((book_index=0; book_index<66; book_index++)); do
+for ((book_index=0; book_index<73; book_index++)); do
 
   book=${book_array[$book_index]}
   last_chapter=${chapter_array[$book_index]}

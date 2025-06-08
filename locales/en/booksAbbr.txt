@@ -14,15 +14,22 @@ Ruth
 2 Chr
 Ezr
 Neh
+Tob
+Jdt
 Esth
+1 Mac
+2 Mac
 Job
 Ps
 Prov
 Eccl
 Song
+Wis
+Sir
 Isa
 Jer
 Lam
+Bar
 Ezek
 Dan
 Hos
