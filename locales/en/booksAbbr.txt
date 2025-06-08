@@ -1,5 +1,5 @@
 Gen
-Exod
+Ex
 Lev
 Num
 Deut
@@ -8,25 +8,23 @@ Judg
 Ruth
 1 Sam
 2 Sam
-1 Kgs
-2 Kgs
-1 Chr
-2 Chr
-Ezr
+1 Kings
+2 Kings
+1 Chron
+2 Chron
+Ezra
 Neh
 Tob
-Jdt
-Esth
-1 Mac
-2 Mac
+Jud
+Esther
 Job
 Ps
 Prov
-Eccl
+Eccles
 Song
 Wis
 Sir
-Isa
+Is
 Jer
 Lam
 Bar
@@ -36,18 +34,20 @@ Hos
 Joel
 Amos
 Obad
-Jonah
+Jon
 Mic
-Nah
+Nahum
 Hab
 Zeph
 Hag
 Zech
 Mal
-Matt
-Mark
-Luke
-John
+1 Mac
+2 Mac
+Mt
+Mk
+Lk
+Jn
 Acts
 Rom
 1 Cor
@@ -56,18 +56,18 @@ Gal
 Eph
 Phil
 Col
-1 Thess
-2 Thess
+1 These
+2 These
 1 Tim
 2 Tim
-Titus
-Phlm
+Tit
+Philem
 Heb
 Jas
 1 Pet
 2 Pet
-1 John
-2 John
-3 John
+1 Jn
+2 Jn
+3 Jn
 Jude
 Rev
