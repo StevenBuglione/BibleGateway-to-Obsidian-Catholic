@@ -293,7 +293,15 @@ for ((book_index=0; book_index<73; book_index++)); do
     echo -e $chapter_content > "$this_file.md"
 
     # Create a folder for this book of the Bible if it doesn't exist, then move the new file into it
-    mkdir -p "./$bible_folder/$book"; mv "$this_file".md "./$bible_folder/$book"
+    # Compute 2-digit book index and prefixed folder name
+    idx=$book_index          # zero-based in your loop
+    num=$(( idx + 1 ))       # 1–73
+    folder_index=$(printf "%02d - %s" "$num" "$book")
+    book_dir="$bible_folder/$folder_index"
+
+    mkdir -p "$book_dir"
+    mv "$this_file".md "$book_dir"
+
 
     # Update progress in terminal
     if [[ $ARG_VERBOSE == "true" ]]; then
@@ -329,6 +337,10 @@ find . -name "*.md" -print0 | xargs -0 perl -pi -e 's/######\s([0-9]\s|[0-9][0-9
 
 # Delete crossreferences
 find . -name "*.md" -print0 | xargs -0 perl -pi -e 's/\<crossref intro.*crossref\>//g'
+
+# Delete the Copyright About Help Our Network Social Preferences section
+find . -type f -name '*.md' -print0 \
+  | xargs -0 sed -i 's/AboutHelpOur NetworkSocialPreferences.*Preferences//g'
 
 if [[ $ARG_VERBOSE == "true" ]]; then
   echo "Download complete. Markdown files ready for Obsidian import."
