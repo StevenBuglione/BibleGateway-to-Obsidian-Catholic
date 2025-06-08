@@ -310,10 +310,18 @@ for ((book_index=0; book_index<73; book_index++)); do
 
   done # End of chapter loop
 
-  # Create an overview file for each book of the Bible:
+  # Create an overview file inside the numbered book folder
   overview_file="links: [[$bible_name]]\n# $book\n\n[[$abbreviation 1|Start Reading →]]"
-  echo -e $overview_file > "$book.md"
-  mv "$book.md" "./$bible_folder/$book"
+
+  # re-compute the folder name (must match what you did for chapters)
+  num=$(( book_index + 1 ))
+  folder_index=$(printf "%02d - %s" "$num" "$book")
+  book_dir="$bible_folder/$folder_index"
+
+  # write and move it into that numbered folder
+  echo -e "$overview_file" > "$book.md"
+  mv "$book.md" "$book_dir"
+
 
 done # End of book loop
 
