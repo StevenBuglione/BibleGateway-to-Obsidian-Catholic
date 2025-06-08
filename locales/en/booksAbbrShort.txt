@@ -17,6 +17,8 @@ Neh
 Tob
 Jud
 Esther
+1 Mac
+2 Mac
 Job
 Ps
 Prov
@@ -42,8 +44,6 @@ Zeph
 Hag
 Zech
 Mal
-1 Mac
-2 Mac
 Mt
 Mk
 Lk

@@ -112,16 +112,88 @@ done <"$translation_folder/$ABBR_FILE"
 # Book chapter list
 declare -a chapter_array
 chapter_array=(
-  50 40 27 36 34 24 21 4     # Genesis–Ruth
-  31 24 22 25 29 36 10 13    # 1 Samuel–Nehemiah
-  14 16 10 16 15             # Tobit, Judith, Esther, 1 Macc, 2 Macc
-  42 150 31 12 8             # Job–Song of Solomon
-  19 51                      # Wisdom, Sirach
-  66 52 5 6 48 14            # Isaiah–Daniel
-  14 3 9 1 4 7 3 3 3 2 14 4  # Hosea–Malachi
-  28 16 24 21 28 16 16 13    # Matthew – 2 Corinthians
-  6 6 4 4 5 3 6 4 3 1 13     # Galatians – Hebrews
-  5 5 3 5 1 1 1 22           # James – Revelation
+  50  # Genesis
+  40  # Exodus
+  27  # Leviticus
+  36  # Numbers
+  34  # Deuteronomy
+  24  # Joshua
+  21  # Judges
+  4   # Ruth
+
+  31  # 1 Samuel
+  24  # 2 Samuel
+  22  # 1 Kings
+  25  # 2 Kings
+  29  # 1 Chronicles
+  36  # 2 Chronicles
+  10  # Ezra
+  13  # Nehemiah
+
+  14  # Tobit
+  16  # Judith
+  10  # Esther
+  16  # 1 Maccabees
+  15  # 2 Maccabees
+
+  42   # Job
+  150  # Psalms
+  31   # Proverbs
+  12   # Ecclesiastes
+  8    # Song of Solomon
+
+  19  # Wisdom
+  51  # Sirach
+
+  66  # Isaiah
+  52  # Jeremiah
+  5   # Lamentations
+  6   # Baruch
+  48  # Ezekiel
+  14  # Daniel
+
+  14  # Hosea
+  3   # Joel
+  9   # Amos
+  1   # Obadiah
+  4   # Jonah
+  7   # Micah
+  3   # Nahum
+  3   # Habakkuk
+  3   # Zephaniah
+  2   # Haggai
+  14  # Zechariah
+  4   # Malachi
+
+  28  # Matthew
+  16  # Mark
+  24  # Luke
+  21  # John
+  28  # Acts
+  16  # Romans
+  16  # 1 Corinthians
+  13  # 2 Corinthians
+
+  6   # Galatians
+  6   # Ephesians
+  4   # Philippians
+  4   # Colossians
+  5   # 1 Thessalonians
+  3   # 2 Thessalonians
+  6   # 1 Timothy
+  4   # 2 Timothy
+  3   # Titus
+  1   # Philemon
+  13  # Hebrews
+
+  5   # James
+  5   # 1 Peter
+  3   # 2 Peter
+  5   # 1 John
+  1   # 2 John
+  1   # 3 John
+  1   # Jude
+  22  # Revelation
 )
 
 # Find the longest book title (this might change in different languages)
