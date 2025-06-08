@@ -29,7 +29,7 @@
 show_help()
 {
 	echo "Usage: $0 [-sbeaicyh] [-v version]"
-	echo "  -v version   Specify the Bible version to download (default = WEB)"
+	echo "  -v version   Specify the Bible version to download (default = RSVCE)"
 	echo "  -s    If available, use shorter book abbreviations"
 	echo "  -b    Set words of Jesus in bold"
 	echo "  -e    Include editorial headers"
@@ -43,7 +43,7 @@ show_help()
 }
 
 # Clear version variable if it exists and set defaults for others
-ARG_VERSION="WEB"        # Which version to use from BibleGateway.com
+ARG_VERSION="RSVCE"        # Which version to use from BibleGateway.com
 ARG_ABBR_SHORT="false"   # Use shorter book abbreviations
 ARG_BOLD_WORDS="false"   # Set words of Jesus in bold
 ARG_HEADERS="false"      # Include editorial headers
